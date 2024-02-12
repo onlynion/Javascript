@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Dom Summary</title>
+</head>
+<body>
+    <h1>Final Dom events handlers</h1>
+    <h1 id="handle-status">Button e click korle ami change hobo </h1>
+    <p>Default input text</p>
+    <input type="text"> 
+    <button>Update</button>
+    <br> <br>   
+
+    <button onclick="handleOnClick()">Handle Event by Add onclick Function</button>
+    <button id="event-listener">Handle event by addEventListener</button>
+
+    <script>
+        function handleOnClick(){
+            const changedText = document.getElementById('handle-status');
+            changedText.innerText = 'Dekhcho bolochilam na ami change hobo';
+            changedText.style.color = 'Tomato';
+        }
+
+        document.getElementById('event-listener').addEventListener('click', function(){
+            const changedText = document.getElementById('handle-status');
+            changedText.innerText = 'I LOVE YOU 3000 SARAH PAKHI';
+            changedText.style.color = 'pink';
+        })
+    </script>
+</body>
+</html>
