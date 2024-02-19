@@ -1,3 +1,2 @@
-console.log("hello from js file");
-console.log(document);
-console.log(document.body);
+// console.log('Hello from js');
+// console.log(document);

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM SUMMARY</title>
+</head>
+<body>
+    <h1>Final Dom event handlers</h1>
+    <h1 id="handle-status">Default Text</h1>
+    <button onclick="handleOnClick()">Handle event by add onclick function</button> <br><br>
+    <button id="handle-addEvent">Handle event by addEventListner</button>
+
+    <script>
+        // Option-1
+        function handleOnClick(){
+            document.getElementById('handle-status').innerText = 'Text changed by handleOnClick function'
+        }
+
+        // Option-2
+        document.getElementById('handle-addEvent').addEventListener('click', function(){
+            document.getElementById('handle-status').innerText = 'Text changed by addEventListner'
+        })
+
+    </script>
+</body>
+</html>
